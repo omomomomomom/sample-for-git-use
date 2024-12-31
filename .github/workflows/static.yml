@@ -14,6 +14,9 @@ jobs:
         id: step-2
         if: env.CALCULATION_RESULT == '3'
         run: echo "hello"
+      - name: Step 3
+        id: step-3
+        run: 3exit 1
       - name: Runs on Failure
         id: failed-1
         if: failure() && steps.step-3.conclusion == 'failure'
