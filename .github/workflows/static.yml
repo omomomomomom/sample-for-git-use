@@ -5,14 +5,14 @@ on: [push]
 jobs:
   job-1:
     env:
-      CALCULATION_RESULT: ${{ 2 + 3 }}
+      CALCULATION_RESULT: 'hello'
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
         run: sleep 01
       - name: Step 2
         id: step-2
-        if: env.CALCULATION_RESULT == '4'
+        if: env.CALCULATION_RESULT == '3'
         run: echo "hello"
       - name: Step 2
         if : always()
