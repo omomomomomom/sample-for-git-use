@@ -11,6 +11,7 @@ jobs:
         id: step-2
         run: exit 1
       - name: Step 2
+        if : always()
         id: step-3
         run: exit 1
       - name: Runs on Failure
