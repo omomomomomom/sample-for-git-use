@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
 
@@ -13,11 +14,22 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: 'Pacifico', cursive, Arial, sans-serif;
+    font-size: 2.8rem;
+    text-shadow: 0 0 8px #fff, 0 0 16px #ff69b4, 0 0 24px #ff69b4;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Add Google Fonts import at the top of your CSS file: */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 main {
     padding: 30px 20px;
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7); /* faded effect */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
